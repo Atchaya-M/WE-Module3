@@ -1,0 +1,60 @@
+\documentclass[12pt,a4]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{siunitx}
+\setlength\topmargin{-1.1in} \addtolength\textheight{2.1in}
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.1in} \textwidth 5.8in
+\newcounter{questioncounter}
+\newcounter{equestioncounter}
+\setlength\parskip{10pt} \setlength\parindent{0in}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+\newcommand{\beao}{\begin{eqnarray}}
+\newcommand{\eeao}{\end{eqnarray}}
+\newcommand{\no}{\noindent}
+
+\begin{document}
+\title{Developing strategies for the bidding card game `Diamonds' with GenAI}
+
+
+\author{Atchaya M}
+\maketitle
+
+
+\section{Introduction}
+This report is based on my experience of teaching Gemini AI a card game and evaluating how well it understood the rules and strategies. As a person who knows the rules of the game, I took on the role of teaching Gemini AI the ins and outs of the game. Our conversation had its ups and downs, with Gemini AI initially making some assumptions and getting a few things wrong. However, with explanation and more accurate prompts, Gemini AI eventually grasped the game's mechanics and even showed interest in coming up with strategies to win.
+
+\section{Teaching GenAI the game}
+When I started explaining the game to Gemini AI, it had a few misconceptions. It made some assumptions that weren't quite right. But I corrected those assumptions and walked through the rules again. It took a bit of back and forth, but eventually, Gemini AI got the hang of it. It was eager to learn and improve its understanding. We went over the rules multiple times, clarifying any points of confusion until Gemini AI had a clear picture of how the game worked. At first, its responses were brief summaries, and it even had some hallucinations, but with more explanation, it started to grasp the game better.
+
+\section{Iterating upon strategy}
+As our conversation progressed, Gemini AI expressed interest in figuring out strategies to win the game. Interestingly, our conversation didn't touch on a specific strategy my peers shared in class, called the threshold value strategy.
+Instead the strategies used were:
+
+1) Prioritize High Value Diamonds: Gemini AI suggested focusing on winning high-value diamonds (Jacks, Queens, Kings, and Aces) to maximize point accumulation.
+
+2) Assess Hand Strength: It emphasized evaluating hand strength before bidding, distinguishing between low-value and high-value cards within its own suit.
+
+3) Bidding Strategy based on Revealed Diamonds: Gemini AI recommended adjusting bidding tactics based on diamonds already revealed, prioritizing lower-value cards for remaining diamonds when high-value ones are claimed.
+
+4) Balancing Bidding and Suit Strength: It acknowledged the importance of balancing bidding and suit strength to remain competitive in both bidding and trick-taking aspects of the game.
+
+5) Limited Bluffing: Gemini AI incorporated limited bluffing into its gameplay, occasionally using low-value cards to bid on high-value diamonds to deceive opponents.
+
+\section{Analysis and Conclusion}
+While my conversation with Gemini AI yielded some valuable insights and strategies for the card game, it's worth noting that it didn't reach the same level of depth as some of my peers' interactions. In their conversations, Gemini AI provided excellent strategies by dividing the game into early, mid, and late rounds, along with offering general strategies. Additionally, when asked to write code, it produced code based on the strategies discused above instead of the strategy of calculating a threshold value that is given by the formula:
+
+ min bid value = (revealed diamond + 1) / (num players * (14- round number)) 
+ 
+ that were presented by my peers in class. But, my conversation with Gemini AI didn't explore these advanced strategies or involve the implementation of complex code logic.
+
+\section{Transcript}
+Gemini AI : https://g.co/gemini/share/8c18706dfc1b 
+ 
+\end{document} 
